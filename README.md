@@ -15,16 +15,16 @@ the following attributes at the minimum
 
 The simplified Commit object simulated by Commit class contains 
   
-  1. commitHash - commit's SHA1 hash generated using commit message for simplification
-  2. tree - Tree object to get the treeHash
-  3. author - Author object which stores name and email address of author
-  4. committer - Author object which stores name and email address of committer
-  5. messgae - commit message
-  6. Timestamp - timestamp storing current time
+  1. **commitHash** - commit's SHA1 hash generated using commit message for simplification
+  2. **tree** - Tree object to get the treeHash
+  3. **author** - Author object which stores name and email address of author
+  4. **committer** - Author object which stores name and email address of committer
+  5. **message** - commit message
+  6. **Timestamp** - timestamp storing current time
   
   
-  equals(Object o) - compares two commit object on the basis of commitHash, treeHash and parent
-  hashCode() - generates unique hashcode for each commit oject using commitHash, treeHash and parent
+  **equals(Object o)** - compares two commit object on the basis of commitHash, treeHash and parent
+  **hashCode()** - generates unique hashcode for each commit oject using commitHash, treeHash and parent
   
 ## Tree Object
 
@@ -33,7 +33,7 @@ subtree with its associated mode, type, and filename
 
 The simplified Tree object simulated by Tree class contains
   
-  1. treeHash - tree's SHA1 hash generated using commit message for simplification
-  2. files - list of strings denoting files/commits present in that tree
+  1. **treeHash** - tree's SHA1 hash generated using commit message for simplification
+  2. **files** - list of strings denoting files/commits present in that tree
   
   
