@@ -89,10 +89,14 @@ public final class Commit {
      */
     @Override
     public int hashCode() {
+
+        // Calculate unique hash
         int hash = 7;
         hash = 31 * hash + (commitHash == null ? 0 : commitHash.hashCode());
         hash = 31 * hash + (tree.getTreeHash() == null ? 0 : tree.getTreeHash().hashCode());
         hash = 31 * hash + (parent == null ? 0 : parent.hashCode());
+
+        //Uncomment the below line if you want to see the hash corresponding each commit object
         //System.out.println("HashCode Called for "+message+" is "+hash);
         return hash;
     }
