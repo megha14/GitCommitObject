@@ -50,7 +50,7 @@ public class SimpleApplication {
         // Check if commit1 is in set. This will invoke hashcode method.
         System.out.println(set.contains(commit1));
 
-        // Check if commit4 is in set
+        // Check if commit4 is in set This will invoke hashcode method.
         System.out.println(set.contains(commit4));
 
         // Printing commit4
