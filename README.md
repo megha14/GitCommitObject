@@ -13,11 +13,11 @@ the following attributes at the minimum
   4. Timestamp
   5. Commit Message
 
-The simplified Commit object simulated by Commit class contains 
+The simplified Commit object simulated by [Commit](src/Commit.java) class contains 
   
   1. **commitHash** - commit's SHA1 hash generated using commit message for simplification
-  2. **tree** - Tree object to get the treeHash
-  3. **author** - Author object which stores name and email address of author
+  2. **tree** - [Tree](src/Tree.java) object to get the treeHash
+  3. **author** - [Author](src/Author.java) object which stores name and email address of author
   4. **committer** - Author object which stores name and email address of committer
   5. **message** - commit message
   6. **Timestamp** - timestamp storing current time
@@ -31,7 +31,7 @@ The simplified Commit object simulated by Commit class contains
 A tree object in git data model contains one or more entries, each of which is the SHA-1 hash of a blob or 
 subtree with its associated mode, type, and filename
 
-The simplified Tree object simulated by Tree class contains
+The simplified Tree object simulated by [Tree](src/Tree.java) class contains
   
   1. **treeHash** - tree's SHA1 hash generated using commit message for simplification
   2. **files** - list of strings denoting files/commits present in that tree
